@@ -26,7 +26,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import Avatar from '@/models/Avatar'
-import PartDrawer from './PartDrawer.vue'
+import PartDrawer from '@/components/PartDrawer.vue'
 import AvatarAsset from '@/models/AvatarAsset'
 
 const props = defineProps<{
