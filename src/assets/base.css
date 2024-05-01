@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ALS Hauss';
+  src: url('./als-hauss-variable.ttf') format('truetype');
+}

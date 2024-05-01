@@ -1,0 +1,108 @@
+@import './base.css';
+
+body {
+  background-color: black;
+}
+
+.favorites-view {
+  display: flex;
+  height: 100vh;
+  place-items: center;
+}
+
+.favorites-view__content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.favorites-view__avatar-drawer {
+  margin-bottom: -25px;
+}
+
+.favorites-view__actions {
+  position: relative;
+  width: 100%;
+  top: -25px;
+  display: flex;
+  justify-content: center;
+}
+
+.generation-view {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+}
+
+.generation-view__actions {
+  position: relative;
+  top: -55px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  border-radius: 4px;
+  color: white;
+  border: 1px solid white;
+  padding: 5.5px 12px 8.5px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'ALS Hauss';
+  line-height: 1;
+}
+
+.button-refresh,
+.button-favorite,
+.button-delete {
+  position: relative;
+  background-color: black;
+}
+
+.button-refresh {
+  padding-left: 35px;
+  border-color: #fd4820;
+  background-color: #fd4820;
+}
+
+.button-favorite {
+  padding-right: 35px;
+}
+
+.button-delete {
+  padding-left: 35px;
+  border-color: white;
+}
+
+.button-refresh:after,
+.button-favorite:before,
+.button-delete:after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  transform: scale(1.2);
+}
+
+.button-refresh:after {
+  top: 7px;
+  left: 10px;
+  background: url('@/components/icons/RefreshIcon.svg') center no-repeat;
+}
+
+.button-favorite:before {
+  top: 5px;
+  right: 10px;
+  background: url('@/components/icons/FavoritesIcon.svg') center no-repeat;
+}
+
+.button-delete:after {
+  top: 5px;
+  left: 10px;
+  background: url('@/components/icons/DeleteIcon.svg') center no-repeat;
+}
