@@ -15,18 +15,26 @@ a,
 
 header {
   display: flex;
-  justify-content: center; /* Выравнивание по горизонтали по центру */
-  align-items: flex-start; /* Выравнивание по вертикали вверху */
+  justify-content: center; 
+  align-items: flex-start; 
   position: fixed;
   top: 10px;
-  width: 100%; /* Чтобы заголовок занимал всю ширину страницы */
+  width: 100%; 
 }
+
+.navigation-links {
+  display: flex;
+  gap: 20px;
+}
+
+.router-link-active {
+  color: white;
+}
+
 
 .favorites-view {
   display: flex;
   height: 100vh;
-  place-items: center;
-
 }
 
 .favorites-view__content {
@@ -126,11 +134,3 @@ button {
   background: url('@/components/icons/DeleteIcon.svg') center no-repeat;
 }
 
-.navigation-links {
-  display: flex;
-  gap: 20px;
-}
-
-.router-link-active {
-  color: white;
-}
