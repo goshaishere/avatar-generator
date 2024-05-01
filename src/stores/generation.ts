@@ -56,6 +56,13 @@ export const useGenerationStore = defineStore('generation', {
         this.favorites.shift()
       }
       localStorage.setItem("favorites", JSON.stringify(this.favorites));
-    }
+    },
+    deleteAvatarFromFavorites(avatar: Avatar): void {
+      const index = this.favorites.findIndex(favAvatar => favAvatar === avatar);
+      if (index !== -1) {
+        this.favorites.splice(index, 1);
+      }
+      localStorage.setItem("favorites", JSON.stringify(this.favorites));
+    },
   }
 });
