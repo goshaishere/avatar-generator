@@ -4,10 +4,35 @@ body {
   background-color: black;
 }
 
+a,
+.green {
+  text-decoration: none;
+  font-family: 'ALS Hauss';
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+header {
+  display: flex;
+  justify-content: center; /* Выравнивание по горизонтали по центру */
+  align-items: flex-start; /* Выравнивание по вертикали вверху */
+  position: fixed;
+  top: 10px;
+  width: 100%; /* Чтобы заголовок занимал всю ширину страницы */
+}
+
 .favorites-view {
   display: flex;
   height: 100vh;
   place-items: center;
+
 }
 
 .favorites-view__content {
@@ -105,4 +130,13 @@ button {
   top: 5px;
   left: 10px;
   background: url('@/components/icons/DeleteIcon.svg') center no-repeat;
+}
+
+.navigation-links {
+  display: flex;
+  gap: 20px;
+}
+
+.router-link-active {
+  color: white;
 }
