@@ -1,39 +1,55 @@
 # avatar-generator
 
-This template should help get you started developing with Vue 3 in Vite.
+## Генератор аватарок в стиле LEGO
 
-## Recommended IDE Setup
+```
+Веб-приложение, которое генерирует случайный аватар пользователя для скачивания в формате ПНГ. Размеры — 440 пикселей по каждой стороне.
+```
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+### Установка зависимостей - Project Setup
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Компиляция и горячая перезагрузка для разработки - Compile and Hot-Reload for Development
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### Предварительный просмотр собранного приложения - Preview
+
+```sh
+npm run preview
+```
+
+### Только сборка приложения - Build Only
+
+```sh
+npm run build-only
+```
+
+### Проверка типов - Type-Check
+
+```sh
+npm run type-check
+```
+
+### Проверка типов, компиляция и минификация для продакшн - Type-Check, Compile and Minify for Production
 
 ```sh
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### Линтинг с помощью ESLint - Lint with [ESLint](https://eslint.org/)
 
 ```sh
 npm run lint
+```
+
+### Форматирование кода - Format
+
+```sh
+npm run format
 ```
